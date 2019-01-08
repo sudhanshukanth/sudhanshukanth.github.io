@@ -1,323 +1,533 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-  <title>Sudhanshu Kanth</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" href="public/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Sudhanshu</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse"" >
-  <div class="container-fluid">
-    <div class="navbar-header" style="font-family:'Lato';">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="https://resume.sudhanshukanth.me/" >Résumé</a>
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">WHO</a></li>
-        <li><a href="#band">WHAT</a></li>
-        <li><a href="#tour">WHY</a></li>
-        <li><a href="#fam">FAMILY</a></li>
-        <li><a href="#contact">PING ME</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Abhi</a></li>
-            <li><a href="#">Nahi</a></li>
-            <li><a href="#">Socha</a></li> 
-          </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <div class="carousel-inner" role="listbox">
+    <!-- header 
+    ================================================== -->
+    <header class="s-header">
+        <nav class="row header-nav-wrap wide">
+            <ul style="padding-left: 40%;width:100%;" class="header-main-nav">
+                <li style="font-size: 35; padding-left:10%;"><a class="smoothscroll" href="#about" title="about">PROFILE</a></li>
+                <li style="padding-left:10%;"><a class="smoothscroll" href="#features" title="features">WORK</a></li>
+                <li style="padding-left:10%;"><a class="smoothscroll" href="#pricing" title="pricing">DESIGN</a></li>
+                <li style="padding-left:10%;"><a class="smoothscroll" href="#download" title="download">CONTACT</a></li>	
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
     
-    
-      <div class="item active">
+    </header> <!-- end header -->
 
-        <img src="./public/images/17990742_10207256135601152_8115249634796410785_n.jpg" alt="car_1" width="1200" height="700">
-        <div class="carousel-caption">
-          <h1 style=font-size:75px>Sudhanshu Kanth</h1>
-          <p>Thats Me! And this is my Résumé website!</p>
-        </div>      
-      </div>
 
-      <div class="item">
-        <img src="./public/images/AAEAAQAAAAAAAAerAAAAJDMzMzQ1ZGI0LWFkMzQtNDAzOS1iMGNjLWU3ODAxMDJiY2RiYw.jpg" alt="Chicago" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3 style=font-size:40px>An Explorer</h3>
-          <p>I love to take on new challenges!</p>
-        </div>      
-      </div>
-    
-      <div class="item">
-        <img src="./public/images/newyork.jpg" alt="Los Angeles" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3 style=font-size:40px>Analytical Reasoner</h3>
-          <p>Out of the box ideas hit me all the time!</p>
-        </div>      
-      </div>
-    </div>
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section">
 
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
+        <div class="home-image-part"></div>
 
-<div id="band" class="container text-center">
-  <h3>About Me</h3>
-  <br>
-  <br>
-  <p>I am a third year Electthe IT Industry. I’m looking for professional exposure and hands-on work experience while proving as an asset in a thriving organisation! 
-</p>
-  <br>
-  
+        <div class="home-content">
 
-<div id="tour" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">What I Know</h3>
-    <p class="text-center">I'm currently a Graphic & Web Designer</p><p>I also dabble in UI/UX design sometimes</p><p>Will be elaborating on this soon!</p>
-    <br>
-    <br>
-    <h3 class="text-center">Why should I be hired?</h3>
-    <h5 class="text-center"><em>These are my skillsets!</em></h5>
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="./public/images/design.jpg" alt="Paris" width="400" height="300">
-          <p><strong>UI/UX & Graphic Design</strong></p>
-          <p>Adobe Creative Suite</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal"> Info </button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="./public/images/tech.jpg" alt="New York" width="400" height="300">
-          <p><strong>Web Design</strong></p>
-          <p>HTML,CSS,JS (NodeJS+MongoDB)</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal"> Info </button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="./public/images/extra.jpg" alt="San Francisco" width="400" height="300">
-          <p><strong>Extracurricular</strong></p>
-          <p>Play Football & Bagpipe, also debate</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal"> Info </button>
-        </div>
-      </div>
-    </div>
-  </div>
-<br>
-<br>
-<div id="fam">
-<h3 class="text-center">A little about my family</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Dad</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="./public/images/dad.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo" class="collapse">
-        <p>Electronics Engineer</p>
-        <p>Yoga Teacher</p>
-        <p><i>Very</i> particular about his daily routine</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Mom</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="./public/images/mom1.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo2" class="collapse">
-        <p>Art Of Living Teacher</p>
-        <p>M.Sc (Botany) University Medallist</p>
-        <p>Best Mom ever!</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Sisterzzzzzzzzzz</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="./public/images/AijsG0iCEAAA1p0.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Software Engineer</p>
-        <p>Social Worker</p>
-        <p>Now looks a lot different than the image</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
+            <div class="row home-content__main wide">
 
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-folder-open "></span> Works </h4>
-        </div>
-        <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-wrench"></span> This modal will be updated very soon with links to my works, in the meantime, visit<p> <a href="https://www.behance.net/sud_kan2008644"> my Behance</p></label>
-              
+                <h1>
+                Sudhanshu <br>
+                Kanth
+                </h1>
+
+                <h3>
+                Engineer | Designer | Professional Phone Dropper
+                </h3>
+
+                <div class="home-content__button">
+                    <a class="btn-video" href="https://www.youtube.com/watch?v=oHg5SJYRHA0" data-lity>
+                        <span class="video-icon"></span>
+                    </a>
+                    <a href="#download" class="smoothscroll btn btn--primary btn--large">
+                        Contact Me
+                    </a>
+                </div>
+
+            </div> <!-- end home-content__main -->
+
+            <a href="#about" class="home-scroll smoothscroll">
+                <span class="home-scroll__text">Scroll Down</span>
+                <span class="home-scroll__icon"></span>
+            </a>
+
+        </div> <!-- end home-content -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header narrower align-center" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    My Profile
+                </h1>
+                <p class="lead">
+
+					I am a fourth year Electronics Engineering Student studying at SRM University, Chennai. A talented and hard-working individual, I'm a go-getter with explosive interest in UI/UX & Web Design, and an extensive knowledge about Graphic Design.
+					I’m dedicated and enthusiastic towards my work and have a strong interest in the IT Industry. I’m looking for professional exposure and hands-on work experience while proving as an asset in a thriving organisation!
+
+                </p>
+                <br>
+                <br>
+                <br>
+                <h1 class="display-1">
+                    My Skills
+                </h1>
+                
             </div>
-           
-              </button>
-          </form>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Web/Graphic Design</h3>
+
+                    <p>
+                    I've been dabbling with graphic designs for about half a decade now, and have put graphics to use in front-end web design with the aid of Bootstrap & CSS with a sprinkle of JavaScript 
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">UI/UX Design</h3>
+
+                    <p>
+                    With the advent of Adobe XD, I've also started designing and prototyping User Interfaces and workflows for half a dozen apps yet. Wireframing dynamic applications is a forte of mine
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Product Design</h3>
+
+                    <p>
+                    Of late, my works also include digital products like e-books, discussion forums and broadcast services which need heavy analysis and extensive use-cases. This helps train the anaytical side of my brain
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Product Management</h3>
+
+                    <p>
+                    On certain projects, as a product manager I'm responsible for architecting innovative solutions to real-time problem sets while also improving the current products for future prospects
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+            </div> <!-- end about-desc__slider -->
+        </div> <!-- end about-desc -->
+
+        <div class="row about-bottom-image" data-aos="fade-up">
+            <img src="images/app-screen-1400.png" 
+                 srcset="images/app-screen-600.png 600w, 
+                         images/app-screen-1400.png 1400w, 
+                         images/app-screen-2800.png 2800w" 
+                 sizes="(max-width: 2800px) 100vw, 2800px" 
+                 alt="App Screenshots"> 
+         </div>
+
+    </section> <!-- end s-about -->
+
+
+    <!-- process
+    ================================================== -->
+    <section id="process" class="s-process">
+
+        <div class="row">
+            <div class="col-full text-center" data-aos="fade-up">
+                <h2 class="display-2">Academics</h2>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-          <p>Need <a href="#">help?</a></p>
+
+        <div class="row process block-1-4 block-m-1-2 block-tab-full">
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                    <h3>10 GPA</h3>
+                    <p>
+                    10th Grade
+                    </p>
+                     <p>
+                    Science
+                    </p>
+                    <p>
+                    Delhi Public School, Jaipur
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                    <h3>90%</h3>
+                    <p>
+                    12th Grade
+                    </p>
+                    <p>
+                    Physics | Chemistry | Maths
+                    </p>
+                    <p>
+                    Delhi Public School, Jaipur
+                </div>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__text">
+                    <h3>8.5 GPA</h3>
+                   <p>
+                    6th Semester
+                    </p>
+                    <p>
+                    Electronics & Communications Engineering
+                    </p>
+                    <p>
+                    SRM University, Chennai
+                </div>
+            </div>
+        
+        </div> <!-- end process -->
+
+        <div class="row process-bottom-image" data-aos="fade-up">
+            <img src="images/phone-app-screens-1000.png" 
+                 srcset="images/phone-app-screens-600.png 600w, 
+                         images/phone-app-screens-1000.png 1000w, 
+                         images/phone-app-screens-2000.png 2000w" 
+                 sizes="(max-width: 2000px) 100vw, 2000px" 
+                 alt="App Screenshots"> 
+         </div>
+        
+    </section> <!-- end s-process -->
+
+
+    <!-- features
+    ================================================== -->
+    <section id="features" class="s-features target-section">
+
+        <div class="row section-header narrower align-center has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Where to find me
+                </h1>
+                <p class="lead">
+                    You can find me frequently uploading my works and designs on several platforms like LinkedIn and Behance.
+                    <br>
+                    <br>
+                    <a href="https://behance.net/sud_kan2008644" target="_blank" class="btn btn--primary btn--large">
+                        Visit my Behance
+                    </a>
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div data-aos="fade-up">
+        <h1 class="display-1 text-center">
+                    My Work Experience
+                </h1>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<br>
-<br>
-<br>
-<br>
-<p></p>
-<div id="contact" class="container">
-  <h2 class="text-center">I'll be uploading my projects very soon so keep coming back!<br>In the meantime, leave a word</h2>
-  <p class="text-center"><em>I'd love some feedback!</em></p>
-  <br>
-  <br>
-  <br>
+        <div class="row bit-narrow features block-1-2 block-mob-full">
+        
 
-  <div class="row">
-    <div class="col-md-4">
-      <p>Wanna reach out?</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chennai, India</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 8754512435</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: sud_kan2004@yahoo.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <div class="col-block item-feature" data-aos="fade-up">
+
+                <div class="item-feature__icon">
+                    <i class="icon-upload"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">ChalkStreet</h3>
+                    <p>I'm currently working as a Product Architect in ChalkStreet after campus placements. My work involves as much designing as analysis of the existing products which are mostly assoicated with learning and development. I also develop architectural and design principles to improve performance, capacity, and scalability of our technology. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-video-camera"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">TATA Consultancy Services</h3>
+                    <p>I have interned with TATA Consultancy Services under the field of Machine Learning and Data Analytics for about 2 months. As a deliverable I have completed Andrew Ng's ML course from Stanford with 100% grade and distinction.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-shield"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Ericsson</h3>
+                    <p>As a part of my industrial project, I trained in Networking Protocols and Packet Tracers in Ericsson's Gurgaon Office during my 3rd year, where I learnt about communication protocols and data transfer architectures which bind a newtork topology.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-lego-block"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">CRY</h3>
+                    <p>I am an active volunteer for Child Rights and You- a non profit organisation that helps underprivileged children in fields such as human rights, education, resource allotment and such. Elected as the CRY youth leader, I relate heavily with the cause and try to help whenever I can.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-chat"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">HappCoach</h3>
+                    <p>I worked with happcoach as a graphic consultant for over 2 years with several projects ranging from HappPost to HappMedia, culminating in more than a 300+ hr commitment even before I graduated.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-wallet"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Webarch</h3>
+                    <p>Webarch is the oldest Technical Team Of SRM University responsible for handling technical end of fest activities or innovative applications ratified by the University. I have been a part of this team since the first year of college.
+                </div>
+            </div>
+
+        </div> <!-- end features -->
+
+        <div class="testimonials-wrap" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Skillrack</h2>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Graphic Design</span>
+                            <a href="#0" class="testimonials__link">Photoshop | Illustrator</a>
+                        </div>
+                        <p>My love for design bloomed in my early teaange days and I have never looked back since. Pixel graphics gave way to vector design, and poster design templated became original illustrations!  </p>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">UI/UX & Web Design</span>
+                            <a href="#0" class="testimonials__link">Sketch | Figma | Adobe XD</a>
+                        </div>
+                        <p>With experience, various applications of graphic design found their way through me via front end coding, User Interaction and User Experience for both mobil and web applications, interior development etc. </p>                        
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Interpersonal </span>
+                            <a href="#0" class="testimonials__link">Leadership | Management | Communication</a>
+                        </div>
+                        <p>I have the right balance of leadership abilities and communication skills required to work seamlessly in a team. As a testimony, I have been elected as the Head Boy in my High School and have also won numerous debate competitions throughout India.</p>
+                    </div> <!-- end testimonials__slide -->
+                    
+                </div> <!-- end testimonials__slider -->
+
+            </div> <!-- end testimonials -->
+
+        </div> <!-- end testimonials-wrap -->
+
+    </section> <!-- end s-features -->
+
+
+    <!-- pricing
+    ================================================== -->
+    <section id="pricing" class="s-pricing target-section">
+
+        <div class="row section-header narrower align-center" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   Why I chose deisgn after pursuing Engineering
+                </h1>
+                <p class="lead">
+                Despite having decent quantitative abilities, I always found my true calling to be in design. Ever since childhood, I have always had an obsessive compulsion about perfections in design and geometric patterns. Maybe an aptitude for science only fortified my true interests and thus I found myself working at the confluence of art and technology!
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div style="padding-left:15%;" class="row plans block-1-3 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" data-aos="fade-up">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">Electronics</h3>
+                        <p class="item-plan__price">Engineering</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features disc">
+                            <li><span></span>Rigid principles</li>
+                            <li><span></span>Systematic Work</li>
+                            <li><span></span>Lock and key oriented</li>
+                            <li><span></span>Objective</li>
+                        </ul>
+
+                    </div>  
+                
+                </div>
+            </div> <!-- end item-plan -->
+
+            <div style="padding-left:8%; width: 50%;" class="col-block item-plan item-plan--popular" data-aos="fade-up">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">Product</h3>
+                        <p class="item-plan__price">Design</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features disc">
+                            <li><span></span>Fluid Workflow</li>
+                            <li><span></span>Creativity Oriented</li>
+                            <li><span></span>Freedom of Imagination</li>
+                            <li><span></span>Dynamic Interfaces</li>
+                        </ul>
+                    </div>  
+                
+                </div>
+            </div> <!-- end item-plan -->
+
+        </div> <!-- end plans -->
+
+    </section> <!-- end s-pricing -->
+
+
+    <!-- download
+    ================================================== -->
+    <section id="download" class="s-download">
+
+        <div class="row download-content">
+            <div class="col-six md-seven download-content__text pull-right" data-aos="fade-up">
+                <h1 class="display-2">
+                    Reach out! I'm very social!
+                </h1>
+                <p> <ul>
+
+                   <div class="tab-full" style="margin-left: -6%;">
+
+                <ul class="footer__social">
+                    <li><a href="https://www.facebook.com/sudhanshu.kanth" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=8754512435"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/tumsenahopaega/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.github.com/sudhanshukanth" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.behance.net/sud_kan2008644" target="_blank"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sudhanshukanth/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.soundcloud.com/tumsenahopaega" target="_blank"><i class="fab fa-soundcloud" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.dribbble.com/sudhanshukanth" target="_blank"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kanthsudhanshu/" target="_blank"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+                </p>
+            </div>
+            <div class="download-content__image" data-aos="fade-up">
+                <img width="85%" src="images/phone-app-profile-550.png" 
+                     srcset="images/phone-app-profile-550.png 1x, images/phone-app-profile-550.png 2x">
+            </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+
+    </section> <!-- end s-download -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+        <div class="row footer__top">
+            <div class="col-six md-full">
+                <h1 class="display-2">
+                    Let's Stay In Touch.
+                </h1>
+                <p class="lead">
+                    Contact
+                    <br>
+                    <a href="tel:875-451-2435">+91 8754512435</a>
+                    kanth.sudhanshu@gmail.com
+                    <br>1164, Estancia, SRM Nagar, Guduvancheri
+                    <br>
+                    Chennai - 603203
+                    
+
+                </p>
+            </div>
+            <div class="col-six md-full footer__subscribe end">
+            
+               
+
+
+
+            </div>
         </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
+
+        <div class="row footer__bottom">
+            
+
+            <div class="col-six tab-full end">
+
+            </div>
+
         </div>
-      </div>
-    </div>
-  </div>
-  <br>
- <!--  <h3 class="text-center">From The Blog</h3>  
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
-    <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
-    <li><a data-toggle="tab" href="#menu2">Peter</a></li>
-  </ul> -->
-<!-- 
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h2>Mike Ross, Manager</h2>
-      <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h2>Chandler Bing, Guitarist</h2>
-      <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h2>Peter Griffin, Bass player</h2>
-      <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
-    </div>
-  </div>
-</div>
- -->
-<div id="googleMap"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(12.827, 80.04);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
 
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  </a></p> 
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
+    </footer> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-</html>
