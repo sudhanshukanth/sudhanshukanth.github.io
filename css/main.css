@@ -110,6 +110,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.hello}{
+  text-align:left;
+  padding-right: 20px; 
+}
 
 /* ------------------------------------------------------------------- 
  * ## links
@@ -1678,6 +1682,7 @@ input::-moz-focus-inner {
   background-color: #101316;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  padding-bottom: 7.5%;
 }
 
 /* -------------------------------------------------------------------
@@ -1706,8 +1711,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 140px;
-  height: 16px;
+  width: 75px;
+  height: 75px;
 }
 
 /* ------------------------------------------------------------------- 
