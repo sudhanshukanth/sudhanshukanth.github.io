@@ -2784,8 +2784,14 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## about process
  * ------------------------------------------------------------------- */
+
+@media (min-width: 501px) {
+  .process {
+    margin-left: 33rem;
+  }
+}
+
 .process {
-  margin-left: 33rem;
   margin-top: 3.2rem;
   counter-reset: ctr;
 }
