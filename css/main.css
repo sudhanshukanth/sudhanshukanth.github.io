@@ -2785,6 +2785,7 @@ html.no-csstransitions .home-content__main {
  * ## about process
  * ------------------------------------------------------------------- */
 .process {
+  margin-left: 33rem;
   margin-top: 3.2rem;
   counter-reset: ctr;
 }
